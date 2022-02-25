@@ -1,0 +1,15 @@
+﻿@using Mock.Application.Features.Categories.Commands.CreateCategory
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+
+@model CreateCategoryCommand
+
+<form method="post" asp-action="Privacy">
+    <label asp-for="Name"></label>
+    <input asp-for="Name" type="text" />
+</form>
+
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
